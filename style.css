@@ -1,0 +1,20 @@
+
+
+* {box-sizing: border-box;}
+
+html {
+    background-color: #fafafa;
+}
+
+body {
+    font-family: erode;
+}
+
+a {
+    text-decoration: none;
+    color: #DBBE9E;
+}
+
+h1 {
+    font-family: erode;
+}
