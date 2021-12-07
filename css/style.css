@@ -1,0 +1,307 @@
+:root {
+    --hkmedium: HKGrotesk-Medium, sans-serif;
+    --hklight: HKGrotesk-Light, sans-serif;
+}
+
+
+@font-face {
+    font-family: var(--hklight);
+    src: url(./fonts/HKGrotesk-Light.woff2) format(woff2);
+    src: url(./fonts/HKGrotesk-Light.woff) format(woff);
+}
+
+@font-face {
+    font-family: var(--hkmedium);
+    src: url(./fonts/HKGrotesk-Medium.woff2) format(woff2);
+    src: url(./fonts/HKGrotesk-Medium.woff) format(woff);
+}
+
+@font-face {
+    font-family: 'Erode-Light';
+    src: url('../fonts/Erode-Light.woff2') format('woff2'),
+         url('../fonts/Erode-Light.woff') format('woff'),
+         url('../fonts/Erode-Light.ttf') format('truetype');
+         font-weight: 300 700;
+         font-display: swap;
+         font-style: normal;
+}
+
+@font-face {
+    font-family: 'Erode-Medium';
+    src: url('../fonts/Erode-Medium.woff2') format('woff2'),
+         url('../fonts/Erode-Medium.woff') format('woff'),
+         url('../fonts/Erode-Medium.ttf') format('truetype');
+         font-weight: 500;
+         font-display: swap;
+         font-style: normal;
+}
+
+
+* {box-sizing: border-box;}
+
+html {
+    background-color: #fdfdfd;
+}
+
+body {
+    color: rgb(22, 13, 5);
+}
+
+a {
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+/* LANDING PAGE */
+
+.main_intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    animation: fade 20s normal;
+    animation-iteration-count: 1;
+}
+
+.title {
+    color: #f0eade;
+    font-family: 'Erode-Light';
+    font-size: 2.5rem;
+    position: absolute;
+    z-index: 2;
+    animation: color 20s normal;
+    animation-iteration-count: 1;
+
+}
+
+.title-1 {
+    margin: 0;
+    animation: weight 10s normal;
+    animation-iteration-count: 1;
+}
+
+@keyframes weight {
+    0%   {font-family: Erode-Medium}
+    100% {font-family: Erode-Light}
+}
+
+.padding-title {
+    padding: 15vh 0 10vh;
+    animation: padding 20s normal;
+    animation-iteration-count: 1;
+}
+
+@keyframes padding {
+    0%   {padding: 0vh}
+    100% {padding: 15vh 0 10vh}
+}
+.padding-title-1 {
+    padding: 15vh 0 10vh;
+}
+
+.title-2 {
+    font-family: 'Erode-Light';
+    font-size: 1.2rem;
+    margin: 0;
+    animation: fade-two 20s normal;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade {
+    0%   {opacity: 100%;}
+    100%  {opacity: 0%;}
+}
+
+@keyframes fade-two {
+    0%   {opacity: 0%;}
+    100% {opacity: 100%;}
+}
+
+@keyframes color {
+    0%   {color: #f0eade;}
+    90% {color: #16120c;}
+    100%   {color: #f0eade;}
+}
+
+.header, .footer {
+    display: inline;
+    
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 300;
+    color: rgb(22, 13, 5);
+    text-transform: uppercase;
+}
+
+.footer {
+    /* display: none; */
+    font-family: var(--hklight);
+    letter-spacing: 0.03rem;
+    padding: 0.2vh;
+}
+
+.header {
+    padding-top: 0.7vh;
+}
+
+
+.footerend {
+    bottom: 0%;
+    background-color: #1f1e1ee5;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    left: 0%;
+    overflow: hidden;
+    position: fixed;
+    min-width: 0;
+    padding: 1vh;
+    margin: 0;  
+    width: 100vw;
+}
+
+
+
+.align { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img {
+    width: auto;
+    height: 40vw;
+    padding: 3vw;
+}
+
+.image {
+    filter: drop-shadow(2px 4px 3px rgba(221, 221, 221, 0.15));
+}
+
+li {
+    width: 35vw;
+}
+
+
+
+.glide__arrows {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    /* border: 2px solid royalblue; */
+    /* margin: 1.2vh 0; */
+}
+
+.glide__arrow {
+    font-weight: 300;
+    background: none;
+    border-radius: 50%;
+    border: 2.3px solid rgba(37, 29, 29, 0.616);
+    color: rgba(15, 11, 11, 0.712);
+    padding: 1.3vh 1.8vh;
+    filter: drop-shadow(1px 1px 4px rgba(241, 241, 241, 0.418));
+}
+
+.glide__bullet {
+    border-radius: 50%;
+    padding: 0.25rem;
+    border: none;
+    margin: 0 1vh;
+}
+.glide__bullet--active {
+    background: rgba(15, 11, 11, 0.712);
+}
+
+.padding {
+    width: 5vw;
+}
+
+/* ARTICLES */
+
+.article {
+    padding: 5vw 26vw;
+    text-align: justify;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.intro {
+    font-family: 'Erode-Medium';
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+.copy {
+    font-family: 'Erode-Light';
+    font-size: 1.2rem;
+    padding-top: 2.5vw;
+    padding-right: 5.5vw;
+    line-height: 1.6rem;
+}
+
+.copy-padding {
+    padding-right: 16vw;
+}
+
+.subhead {
+    font-family: var(--hkmedium);
+    font-size: 1.2rem;
+    padding-top: 1vw;
+    padding-right: 1vw;
+    line-height: 1.6rem;
+}
+
+/* Footnotes */
+
+.footnotes {
+    font-family: var(--hklight);
+    font-size: 0.7rem;
+    padding-top: 1vw;
+    line-height: 1rem;
+    letter-spacing: 0.001rem;
+    text-align: left;
+}
+.one {
+    padding-top: 8vw;
+}
+.two {
+    padding-top: 15.7vw;
+}
+.three {
+    padding-top: 15.3vw;
+}
+.four {
+    padding-top: 1.5vw;
+}
+.five {
+    padding-top: 1.5vw;
+}
+.six {
+    padding-top: 56.7vw;
+}
+.seven {
+    padding-top: 1.8vw;
+}
+.eight {
+    padding-top: 17.4vw;
+}
+.nine {
+    padding-top: 23.5vw;
+}
+.ten {
+    padding-top: 17.6vw;
+}
+.eleven {
+    padding-top: 14.1vw;
+}
+
+/* PART 1 */
