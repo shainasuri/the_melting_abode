@@ -155,7 +155,63 @@ a {
 
 
 
-/*  */
+/* SECTION DIVIDERS */
+
+.section_divider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    color: #e0d4bb;
+}
+
+
+.section_divider > img {
+    width: 80vw;
+    height: auto;
+    padding: 0;
+    margin: 5vh 0;
+}
+
+
+.parts {
+    width: 100vw;
+    height: auto;
+    padding: 5vw 10vw;
+    margin: 0;
+    background-color: #18120e;
+    text-align: center;
+}
+.mini_title, .credits {
+    font-size: 0.8rem;
+    font-family: var(--hklight);
+    padding-bottom: 2vh;
+}
+
+.part_name {
+    font-family: var(--hklight);
+    font-size: 2rem;
+    padding: 3vh;
+}
+
+.caption {
+    font-size: 1rem;
+    font-family: 'Erode-Light';
+    text-align: center;
+    line-height: 1.4rem;
+    padding: 2vh 27vw;
+}
+.padding-divider {
+    padding: 20vh 0 ;
+}
+
+.full-bleed {
+    margin: 5vw 0;
+}
 
 
 
@@ -180,6 +236,10 @@ li {
     width: 35vw;
 }
 
+
+.container {
+    margin: 8vh 0;
+}
 
 
 .glide__arrows {
