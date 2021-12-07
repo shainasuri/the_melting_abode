@@ -129,10 +129,11 @@ a {
 }
 
 #preface {
-    padding: 5vw;
+    padding: 5vw 30vw;
 }
 .preface-container {
     display: flex;
+    flex-direction: column;
 }
 .preface {
     font-family: var(--hklight);
@@ -143,53 +144,18 @@ a {
     padding: 2vh 40vw;
 }
 .signature {
-    padding: 0 0 0 10vw;
-    width: auto;
-    height: 10vh;
+    padding: 0;
+    width: 15vw;
+    height: auto;
 }
 .signature-container {
     display: flex;
-    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 
 
-.header, .footer {
-    display: inline;
-    
-    font-size: 0.8rem;
-    text-align: center;
-    font-weight: 300;
-    color: rgb(22, 13, 5);
-    text-transform: uppercase;
-}
-
-.footer {
-    /* display: none; */
-    font-family: var(--hklight);
-    letter-spacing: 0.03rem;
-    padding: 0.2vh;
-}
-
-.header {
-    padding-top: 0.7vh;
-}
-
-
-.footerend {
-    bottom: 0%;
-    background-color: #1f1e1ee5;
-    display: flex;
-    flex: 1 1 auto;
-    justify-content: center;
-    left: 0%;
-    overflow: hidden;
-    position: fixed;
-    min-width: 0;
-    padding: 1vh;
-    margin: 0;  
-    width: 100vw;
-}
+/*  */
 
 
 
@@ -286,7 +252,7 @@ li {
     line-height: 1.6rem;
 }
 
-/* Footnotes */
+/* ------------------------Footnotes */
 
 .footnotes {
     font-family: var(--hklight);
@@ -331,3 +297,43 @@ li {
 }
 
 /* PART 1 */
+
+
+
+
+/* .header, .footer {
+    display: inline;
+    
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 300;
+    color: rgb(22, 13, 5);
+    text-transform: uppercase;
+}
+
+.footer {
+    display: none;
+    font-family: var(--hklight);
+    letter-spacing: 0.03rem;
+    padding: 0.2vh;
+}
+
+.header {
+    padding-top: 0.7vh;
+}
+
+
+.footerend {
+    bottom: 0%;
+    background-color: #1f1e1ee5;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    left: 0%;
+    overflow: hidden;
+    position: fixed;
+    min-width: 0;
+    padding: 1vh;
+    margin: 0;  
+    width: 100vw;
+}  */
