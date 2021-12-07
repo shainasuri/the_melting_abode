@@ -128,6 +128,32 @@ a {
     100%   {color: #f0eade;}
 }
 
+#preface {
+    padding: 5vw;
+}
+.preface-container {
+    display: flex;
+}
+.preface {
+    font-family: var(--hklight);
+    font-size: 2rem;
+    text-align: left;
+}
+.preface-copy {
+    padding: 2vh 40vw;
+}
+.signature {
+    padding: 0 0 0 10vw;
+    width: auto;
+    height: 10vh;
+}
+.signature-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
 .header, .footer {
     display: inline;
     
