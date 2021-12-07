@@ -190,12 +190,14 @@ a {
     font-size: 0.8rem;
     font-family: var(--hklight);
     padding-bottom: 2vh;
+    line-height: 1.4rem;
 }
 
 .part_name {
     font-family: var(--hklight);
     font-size: 2rem;
     padding: 3vh;
+    line-height: 2.5rem;
 }
 
 .caption {
@@ -356,14 +358,12 @@ li {
     padding-top: 14.1vw;
 }
 
-/* PART 1 */
 
 
 
 
-/* .header, .footer {
+.header, .footer {
     display: inline;
-    
     font-size: 0.8rem;
     text-align: center;
     font-weight: 300;
@@ -372,18 +372,23 @@ li {
 }
 
 .footer {
-    display: none;
     font-family: var(--hklight);
     letter-spacing: 0.03rem;
     padding: 0.2vh;
+  
 }
 
 .header {
     padding-top: 0.7vh;
 }
 
-
 .footerend {
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+}
+
+/* .footerend {
     bottom: 0%;
     background-color: #1f1e1ee5;
     display: flex;
@@ -396,4 +401,4 @@ li {
     padding: 1vh;
     margin: 0;  
     width: 100vw;
-}  */
+}   */
