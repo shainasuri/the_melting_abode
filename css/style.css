@@ -216,7 +216,6 @@ a {
 }
 
 
-
 .align { 
     display: flex;
     align-items: center;
@@ -314,6 +313,9 @@ li {
     line-height: 1.6rem;
 }
 
+
+
+
 /* ------------------------Footnotes */
 
 .footnotes {
@@ -360,6 +362,94 @@ li {
 
 
 
+/* BREAKPOINTS */
+
+@media screen and (max-width: 750px) {
+    #preface {
+        padding: 5vw 15vw;
+    }
+    .preface-container {
+        padding: 2vh 0;
+    }
+    .container {
+        margin: 
+    }
+    .article {
+        padding: 5vw 15vw;
+    }
+    .intro {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        text-align: left;
+        padding-top: 2vh;
+    }
+    .copy-padding {
+        padding-right: 10vw;
+    }
+    .copy {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        text-align: left;
+    }
+    .footnotes {
+        font-size: 0.6rem;
+        line-height: 1rem;
+    }
+    .caption {
+        font-size: 0.8rem;
+        font-family: 'Erode-Light';
+        text-align: center;
+        line-height: 1.2rem;
+        padding: 2vh 15vw;
+    }
+    .subhead {
+        font-size: 0.8rem;
+        padding: 2vw 0;
+        line-height: 1.2rem;
+    }
+
+    li > img {
+        width: 50vh;
+    }
+
+    .part_name {
+        font-family: var(--hklight);
+        font-size: 1.4rem;
+        padding: 1vh;
+        line-height: 2rem;
+    }
+    
+    .image > img {
+        width: 90vw;
+        height: auto;
+    }
+
+    .mini_title {
+        padding-top: 2vh;
+    }
+    .signature {
+        width: 20vh;
+    }
+    .parts {
+        padding: 8vw 10vw;
+    }
+
+    .glide__bullet {
+        margin: 0 0.5vh;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .header, .footer {
@@ -402,3 +492,6 @@ li {
     margin: 0;  
     width: 100vw;
 }   */
+
+
+
