@@ -1,20 +1,39 @@
 :root {
-    --hkmedium: HKGrotesk-Medium, sans-serif;
-    --hklight: HKGrotesk-Light, sans-serif;
+    --hkmedium: 'HKGrotesk-Medium', sans-serif;
+    --hklight: 'HKGrotesk-Light', sans-serif;
 }
 
 
 @font-face {
     font-family: var(--hklight);
-    src: url(./fonts/HKGrotesk-Light.woff2) format(woff2);
-    src: url(./fonts/HKGrotesk-Light.woff) format(woff);
+    src: url('../fonts/HKGrotesk-Light.woff2') format('woff2'),
+         url('../fonts/HKGrotesk-Light.woff') format('woff'),
+         url('../fonts/HKGrotesk-Light.ttf') format('truetype');
+         font-weight: 300 700;
+         font-display: swap;
+         font-style: normal;
 }
 
 @font-face {
     font-family: var(--hkmedium);
+    src: url('../fonts/HKGrotesk-Medium.woff2') format('woff2'),
+         url('../fonts/HKGrotesk-Medium.woff') format('woff'),
+         url('../fonts/HKGrotesk-Medium.ttf') format('truetype');
+         font-weight: 300 700;
+         font-display: swap;
+         font-style: normal;
+}
+/* @font-face {
+    font-family: var(--hklight);
+    src: url(./fonts/HKGrotesk-Light.woff2) format(woff2);
+    src: url(./fonts/HKGrotesk-Light.woff) format(woff);
+} */
+
+/* @font-face {
+    font-family: var(--hkmedium);
     src: url(./fonts/HKGrotesk-Medium.woff2) format(woff2);
     src: url(./fonts/HKGrotesk-Medium.woff) format(woff);
-}
+} */
 
 @font-face {
     font-family: 'Erode-Light';
@@ -371,9 +390,7 @@ li {
     .preface-container {
         padding: 2vh 0;
     }
-    .container {
-        margin: 
-    }
+
     .article {
         padding: 5vw 15vw;
     }
