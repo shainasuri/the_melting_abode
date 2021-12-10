@@ -1,11 +1,11 @@
-:root {
+/* :root {
     --hkmedium: 'HKGrotesk-Medium', sans-serif;
     --hklight: 'HKGrotesk-Light', sans-serif;
-}
+} */
 
 
 @font-face {
-    font-family: var(--hklight);
+    font-family: 'HKGrotesk-Light';
     src: url('../fonts/HKGrotesk-Light.woff2') format('woff2'),
          url('../fonts/HKGrotesk-Light.woff') format('woff'),
          url('../fonts/HKGrotesk-Light.ttf') format('truetype');
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: var(--hkmedium);
+    font-family: 'HKGrotesk-Medium';
     src: url('../fonts/HKGrotesk-Medium.woff2') format('woff2'),
          url('../fonts/HKGrotesk-Medium.woff') format('woff'),
          url('../fonts/HKGrotesk-Medium.ttf') format('truetype');
@@ -24,13 +24,13 @@
          font-style: normal;
 }
 /* @font-face {
-    font-family: var(--hklight);
+    font-family: 'HKGrotesk-Light';
     src: url(./fonts/HKGrotesk-Light.woff2) format(woff2);
     src: url(./fonts/HKGrotesk-Light.woff) format(woff);
 } */
 
 /* @font-face {
-    font-family: var(--hkmedium);
+    font-family: 'HKGrotesk-Medium';
     src: url(./fonts/HKGrotesk-Medium.woff2) format(woff2);
     src: url(./fonts/HKGrotesk-Medium.woff) format(woff);
 } */
@@ -155,7 +155,7 @@ a {
     flex-direction: column;
 }
 .preface {
-    font-family: var(--hklight);
+    font-family: 'HKGrotesk-Light';
     font-size: 2rem;
     text-align: left;
 }
@@ -207,13 +207,13 @@ a {
 }
 .mini_title, .credits {
     font-size: 0.8rem;
-    font-family: var(--hklight);
+    font-family: 'HKGrotesk-Light';
     padding-bottom: 2vh;
     line-height: 1.4rem;
 }
 
 .part_name {
-    font-family: var(--hklight);
+    font-family: 'HKGrotesk-Light';
     font-size: 2rem;
     padding: 3vh;
     line-height: 2.5rem;
@@ -325,7 +325,7 @@ li {
 }
 
 .subhead {
-    font-family: var(--hkmedium);
+    font-family: 'HKGrotesk-Medium';
     font-size: 1.2rem;
     padding-top: 1vw;
     padding-right: 1vw;
