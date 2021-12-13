@@ -38,11 +38,11 @@
          font-style: normal;
 }
 
-
 * {box-sizing: border-box;}
 
 html {
     background-color: #fdfdfd;
+    cursor: default;
 }
 
 body {
@@ -52,6 +52,11 @@ body {
 a {
     text-decoration: none;
     color: #1f1f1f;
+}
+
+span {
+    cursor: pointer;
+    font-size: 1rem;
 }
 
 /* LANDING PAGE */
@@ -66,7 +71,7 @@ a {
     width: 100vw;
     height: 100vh;
     padding: 0;
-    animation: fade 20s normal;
+    animation: fade 10s normal;
     animation-iteration-count: 1;
 }
 
@@ -76,7 +81,7 @@ a {
     font-size: 2.5rem;
     position: absolute;
     z-index: 2;
-    animation: color 20s normal;
+    animation: color 10s normal;
     animation-iteration-count: 1;
 
 }
@@ -88,22 +93,27 @@ a {
 }
 
 @keyframes weight {
-    0%   {font-family: Erode-Medium}
-    100% {font-family: Erode-Light}
+    0%   {font-size: 3rem;
+        font-family:'Erode-Medium';}
+    90%  {font-size: 3rem;
+        font-family:'Erode-Light';}
+    100% {font-size: 2.5rem;
+        font-family:'Erode-Light';}
 }
 
 .padding-title {
-    padding: 15vh 0 10vh;
-    animation: padding 20s normal;
+    padding: 20vh 0 10vh;
+    animation: padding 10s normal;
     animation-iteration-count: 1;
 }
 
 @keyframes padding {
     0%   {padding: 0vh}
-    100% {padding: 15vh 0 10vh}
+    90%  {padding: 0vh}
+    100% {padding: 20vh 0 10vh}
 }
 .padding-title-1 {
-    padding: 15vh 0 10vh;
+    padding: 20vh 0 10vh;
 }
 
 .title-2 {
@@ -142,9 +152,7 @@ a {
     font-size: 2rem;
     text-align: left;
 }
-.preface-copy {
-    padding: 2vh 40vw;
-}
+
 .signature {
     padding: 0;
     width: 15vw;
@@ -157,7 +165,7 @@ a {
 
 
 
-/* SECTION DIVIDERS */
+/* -----------------SECTION DIVIDERS----------------- */
 
 .section_divider {
     display: flex;
@@ -170,61 +178,68 @@ a {
     margin: 0;
     color: #e0d4bb;
 }
-
-
 .section_divider > img {
     width: 80vw;
     height: auto;
     padding: 0;
     margin: 5vh 0;
 }
-
-
 .parts {
     width: 100vw;
-    height: auto;
+    height: 95vh;
     padding: 5vw 10vw;
     margin: 0;
     background-color: #18120e;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 .mini_title, .credits {
     font-size: 0.8rem;
     font-family: 'HKGrotesk-Light';
-    padding-bottom: 2vh;
+    padding: 2vh;
     line-height: 1.4rem;
 }
+.credits {
+   justify-content: flex-end;
+}
+.credits > a{
+    color: #e0d4bb;
+}
 
+.credits a:hover, .overlay a:focus {
+    font-family: 'HKGrotesk-Medium';
+}
 .part_name {
     font-family: 'HKGrotesk-Light';
-    font-size: 2rem;
-    padding: 3vh;
-    line-height: 2.5rem;
+    font-size: 2.4rem;
+    padding: 2vh;
+    line-height: 3.1rem;
 }
-
 .caption {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: 'Erode-Light';
     text-align: center;
-    line-height: 1.4rem;
+    line-height: 1.7rem;
     padding: 2vh 27vw;
 }
 .padding-divider {
-    padding: 20vh 0 ;
+    padding: 18vh 0 ;
 }
-
+.padding-divider-2 {
+    padding: 7vh 0 ;
+}
 .full-bleed {
     margin: 5vw 0;
 }
-
-
 .align { 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-
 img {
     width: auto;
     height: 40vw;
@@ -277,7 +292,11 @@ li {
     width: 5vw;
 }
 
-/* ARTICLES */
+#colophon {
+    padding: 0 37vw 15vh;
+}
+
+/* ------------------------------ARTICLES---------------- */
 
 .article {
     padding: 5vw 26vw;
@@ -314,6 +333,7 @@ li {
     padding-right: 1vw;
     line-height: 1.6rem;
 }
+
 
 
 
@@ -373,9 +393,8 @@ li {
     .preface-container {
         padding: 2vh 0;
     }
-
     .article {
-        padding: 5vw 15vw;
+        padding: 5vw 10vw;
     }
     .intro {
         font-size: 1rem;
@@ -387,8 +406,8 @@ li {
         padding-right: 10vw;
     }
     .copy {
-        font-size: 0.8rem;
-        line-height: 1rem;
+        font-size: 1rem;
+        line-height: 1.3rem;
         text-align: left;
     }
     .footnotes {
@@ -445,27 +464,33 @@ li {
 
 
 
+#navbar {
+    overflow: hidden;
+}
 
-
-
-
-
-
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 .header, .footer {
     display: inline;
     font-size: 0.8rem;
-    text-align: center;
     font-weight: 300;
     color: rgb(22, 13, 5);
     text-transform: uppercase;
+
 }
 
-.footer {
+.copyright {
     font-family: 'HKGrotesk-Light';
     letter-spacing: 0.03rem;
-    padding: 0.2vh;
-  
+    padding: 0.5vh 0.2vh 0.4vh;
+}
+
+#hamburger {
+    padding: 1vh 0.2vh;
 }
 
 .header {
@@ -474,24 +499,108 @@ li {
 
 .footerend {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+    width: 100vw;
+    bottom: 0;
+    overflow: hidden;
+    position: fixed;
+    z-index: 5;
+    padding: 1vh 2vh;
+    min-width: 0;
+    margin: 0;  
+    background: #fdfdfd;
+}
+
+
+
+/* ------------ NAVBAR ------------ */
+.overlay {
+    background-color: #fffcf6b6;
+    height: 100vh;
+    left: 0;
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+    width: 0;
+    z-index: 7; 
+}
+
+.overlay-content {
+    position: relative; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 0vh;   
+}
+
+.overlay nav {
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color:  #18120e;
+    font-weight: 600;
+}
+
+.overlay .closebtn {
+    color:  #18120e;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.nav {
+    list-style-type: none;
+    border-width: 1px 0;
+    margin: 0;
+    padding: 5vw 7vw;
+    text-align: left;
+    background-color: #fffcf6d7;
+    /* background-color: #fffcf6d7; */
+}
+
+.nav li{
+    display: block;
+}
+
+.nav a {
+    color:  #18120e;;
+    display: inline-block;
+    padding-bottom: 1.8rem;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-family: 'HKGrotesk-Light';
+    text-decoration: none;
+    line-height: 1.8rem;
+}
+
+.content-subhead {
+    font-family: 'HKGrotesk-Light';
+    font-size: 0.7rem;
+    padding-bottom: 0.3rem;
+}
+
+.contents-title {
+    padding-bottom: 6vh;
+    font-family: 'HKGrotesk-Light';
+    font-size: 2rem;
+} 
+
+.filler-padding {
     padding: 2vh;
 }
 
-/* .footerend {
-    bottom: 0%;
-    background-color: #1f1e1ee5;
+.hamburger-position {
+    z-index: 7;
+    text-align: right;
+    padding: 1vh 13vh;
+}
+
+#myNav {
     display: flex;
-    flex: 1 1 auto;
+    align-items: center;
     justify-content: center;
-    left: 0%;
-    overflow: hidden;
-    position: fixed;
-    min-width: 0;
-    padding: 1vh;
-    margin: 0;  
-    width: 100vw;
-}   */
 
-
-
+}
