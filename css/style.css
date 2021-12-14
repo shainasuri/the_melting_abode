@@ -43,6 +43,7 @@
 html {
     background-color: #fdfdfd;
     cursor: default;
+    user-select: none;
 }
 
 body {
@@ -229,7 +230,7 @@ span {
     padding: 18vh 0 ;
 }
 .padding-divider-2 {
-    padding: 7vh 0 ;
+    padding: 13vh 0 ;
 }
 .full-bleed {
     margin: 5vw 0;
@@ -293,7 +294,7 @@ li {
 }
 
 #colophon {
-    padding: 0 37vw 15vh;
+    padding: 10vh 37vw 15vh;
 }
 
 /* ------------------------------ARTICLES---------------- */
@@ -322,6 +323,14 @@ li {
     line-height: 1.6rem;
 }
 
+.copy-2 {
+    font-family: 'Erode-Light';
+    font-size: 1.2rem;
+    padding-top: 2.5vw;
+    padding-right: 5.5vw;
+    line-height: 1.6rem;
+}
+
 .copy-padding {
     padding-right: 16vw;
 }
@@ -334,7 +343,9 @@ li {
     line-height: 1.6rem;
 }
 
-
+.end-caption {
+    color: rgb(22, 13, 5);
+}
 
 
 
@@ -381,85 +392,6 @@ li {
 .eleven {
     padding-top: 14.1vw;
 }
-
-
-
-/* BREAKPOINTS */
-
-@media screen and (max-width: 750px) {
-    #preface {
-        padding: 5vw 15vw;
-    }
-    .preface-container {
-        padding: 2vh 0;
-    }
-    .article {
-        padding: 5vw 10vw;
-    }
-    .intro {
-        font-size: 1rem;
-        line-height: 1.5rem;
-        text-align: left;
-        padding-top: 2vh;
-    }
-    .copy-padding {
-        padding-right: 10vw;
-    }
-    .copy {
-        font-size: 1rem;
-        line-height: 1.3rem;
-        text-align: left;
-    }
-    .footnotes {
-        font-size: 0.6rem;
-        line-height: 1rem;
-    }
-    .caption {
-        font-size: 0.8rem;
-        font-family: 'Erode-Light';
-        text-align: center;
-        line-height: 1.2rem;
-        padding: 2vh 15vw;
-    }
-    .subhead {
-        font-size: 0.8rem;
-        padding: 2vw 0;
-        line-height: 1.2rem;
-    }
-
-    li > img {
-        width: 50vh;
-    }
-
-    .part_name {
-        font-family: 'HKGrotesk-Light';
-        font-size: 1.4rem;
-        padding: 1vh;
-        line-height: 2rem;
-    }
-    
-    .image > img {
-        width: 90vw;
-        height: auto;
-    }
-
-    .mini_title {
-        padding-top: 2vh;
-    }
-    .signature {
-        width: 20vh;
-    }
-    .parts {
-        padding: 8vw 10vw;
-    }
-
-    .glide__bullet {
-        margin: 0 0.5vh;
-    }
-}
-
-
-
 
 
 
@@ -604,3 +536,135 @@ li {
     justify-content: center;
 
 }
+
+
+/* ------------------------------BREAKPOINTS */
+
+@media screen and (max-width: 750px) {
+    #preface {
+        padding: 5vw 15vw;
+    }
+    .preface {
+        padding-bottom: 1vh;
+    }
+    .preface-container {
+        padding: 2vh 0;
+    }
+    .article {
+        padding: 5vw 10vw;
+    }
+    .article-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .footnotes > div {
+        padding-top: 3vh;
+        line-height: 0.85rem;
+    }
+    .intro {
+        font-size: 1.4rem;
+        line-height: 1.75rem;
+        text-align: left;
+        padding-top: 2vh;
+    }
+    .copy-padding {
+        padding-right: 10vw;
+    }
+    .copy {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        text-align: left;
+    }
+    .footnotes {
+        font-size: 0.6rem;
+        line-height: 1rem;
+    }
+    .caption {
+        font-size: 0.9rem;
+        font-family: 'Erode-Light';
+        text-align: center;
+        line-height: 1.2rem;
+        padding: 2vh 10vw;
+    }
+    .subhead {
+        font-size: 1rem;
+        padding: 2vw 0;
+        line-height: 1.4rem;
+    }
+
+    li > img {
+        width: 50vh;
+    }
+
+    .container {
+        margin: 5vh 0;
+    }
+
+    .section_divider > img {
+    width: 90vw;
+    height: auto;
+    padding: 0;
+    margin: 3vh 0;
+    }
+
+
+    .part_name {
+        font-family: 'HKGrotesk-Light';
+        font-size: 1.6rem;
+        padding: 1vh;
+        line-height: 2.1rem;
+    }
+    
+    .image > img {
+        width: 95vw;
+        height: auto;
+    }
+    .credits {
+        padding: 0 0 2vh 0;
+    }
+
+    .mini_title {
+        padding-top: 2vh;
+    }
+    .signature {
+        width: 20vh;
+    }
+    .parts {
+        padding: 8vw 10vw;
+    }
+    #colophon {
+        padding: 10vh 9vh 13vh;
+    }
+    .copy-2 {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+    .glide__bullet {
+        margin: 0 0.5vh;
+    }
+
+    .hamburger-position {
+       padding: 1vh 0 1vh 4.5vh;
+    }
+    li { 
+        width: 50vw;
+    }
+    .nav {
+        padding: 0 12vw 0 9vw;
+        margin-bottom: 4vh;
+    }
+    .nav a {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+    .contents-title {
+        font-size: 1.5rem;
+        padding: 1.8rem 0 3vh;
+    }
+    .end-caption {
+        margin-bottom: 3vh;
+    }
+}
+
+
+
